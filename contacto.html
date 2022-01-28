@@ -42,6 +42,28 @@
 
 <main class="contenedor seccion"> 
   <h1>Contacto</h1>
+  <picture>
+    <source srcset="build/img/destacada3.webp" type="image/webp">
+    <source srcset="build/img/destacada3.jpg" type="image/jpg">
+    <img loading="lazy" src="build/img/destacada3.jpg" alt="imagen de contacto">
+  </picture>
+  <h2>Llene el formulario de contacto</h2>
+  <form action="formulario">
+    <fieldset>
+      <legend>Informacion personal</legend>
+      <label for="nombre">Tu Nombre:</label>
+      <input type="text" placeholder="Escribe tu nombre" id="nombre">
+
+      <label for="email">Tu E-mail</label>
+      <input type="email" placeholder="Escribe tu e-mail" id="email">
+
+      <label for="telefono">Tu Telefono:</label>
+      <input type="tel" placeholder="Escribe tu telefono" id="telefono">
+
+      <label for="mensaje">Tu Mensaje:</label>
+      <textarea id="mensaje"></textarea>
+    </fieldset>
+  </form>
 </main><!--.contenedor .seccion-->
 
 <footer class="footer seccion">

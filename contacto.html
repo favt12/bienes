@@ -63,6 +63,36 @@
       <label for="mensaje">Tu Mensaje:</label>
       <textarea id="mensaje"></textarea>
     </fieldset>
+
+    <fieldset>
+      <legend>Informacion de la propiedad</legend>
+      <label for="opciones">Vende o Compra</label>
+      <select id="opciones">
+        <option value="" disabled selected>---Seleccione---</option>
+        <option value="compra">Compra</option>
+        <option value="vende">Vende</option>
+      </select>
+      <label for="presupuesto">Precio o Prosupuesto</label>
+      <input type="number" placeholder="Tu precio o prosupuesto" id="prosupuesto">
+    </fieldset> 
+
+    <fieldset>
+      <legend>Informacion de la propiedad</legend>
+      <p>¿Como desea ser contactado?</p>
+      <div class="forma-contacto">
+        <label for="contactar-telefono">Telefono</label>
+        <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+        <label for="contactar-email">E-mail</label>
+        <input name="contacto" type="radio" value="email" id="contactar-email">
+        <p>Elija la fecha y la hora</p>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha">
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" min="9:00" max="18:00">
+      </div>
+    </fieldset>
+    <input type="submit" value="enviar" class="boton-verde">
   </form>
 </main><!--.contenedor .seccion-->
 
